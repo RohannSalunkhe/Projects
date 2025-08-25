@@ -287,12 +287,12 @@ body {
   z-index: 998;
   opacity: 0;
   transition: opacity 0.3s ease;
-  pointer-events: none;
+  pointer-events: none; /* always let clicks pass */
 }
 
 .mobile-overlay.active {
   opacity: 1;
-  pointer-events: all;
+  pointer-events: none; /* don't block project clicks */
 }
 
 /* Tablet Styles */
